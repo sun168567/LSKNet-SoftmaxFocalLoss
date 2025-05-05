@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LSKNet for Remote Sensing Detection
 
 This project is an enhanced version based on the original [LSKNet](https://github.com/zcablii/LSKNet) repository. The original implementation is built upon MMRotate and provides a lightweight backbone specifically designed for remote sensing tasks, including object detection and semantic segmentation.
@@ -169,3 +170,7 @@ If you use this toolbox or benchmark in your research, please cite this project.
 ## License
 Licensed under a [Creative Commons Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/) for Non-commercial use only.
 Any commercial use should get formal permission first.
+=======
+# LSKNet-SoftmaxFocalLoss
+LSKNet with SoftmaxFocalLoss and SE
+>>>>>>> 930f0731bec239c866c53d2c577edb4da34f7a7a
