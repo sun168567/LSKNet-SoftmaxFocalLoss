@@ -18,13 +18,16 @@ We have improved the `LSKblock` structure by adding a **Squeeze-and-Excitation (
 
 These modifications are implemented without altering the core architecture of LSKNet, ensuring compatibility with existing configurations and training pipelines.
 
-## Performance Improvement
+**The following tests are based on self-trained models on 15 epoch checkpoint.**
 
-Preliminary experiments conducted on the **FAIR1M-2.0** dataset show that the proposed enhancements lead to improved detection accuracy compared to the baseline LSKNet-S model. Below is a summary of the results:
+The **FAIR1M-2.0** `train_part` dataset was used to train the models, while the `val_part` dataset was evenly split into two halves: one half was used for validation at each training epoch, and the other half was used to evaluate the model's recall and mAP.
 
-| Metric | Original LSKNet-S | Enhanced LSKNet (Ours) |
-|--------|-------------------|-------------------------|
-| mAP    | 47.87             | ↑ _% (等待填充)     |
+Preliminary experiments conducted on the **FAIR1M-2.0** dataset show that the proposed enhancements lead to improved **recall** compared to the baseline LSKNet-S model. Below is a summary of the results:
+
+| Metric     | Original LSKNet-S | Enhanced LSKNet (Ours)  |
+|------------|-------------------|-------------------------|
+| mAP        | 41.30             | ↓ 39.60                 |
+| recall     | 67.79             | ↑ 73.93                 |
 
 Further ablation studies and experimental results will be added as evaluations on additional datasets are completed.
 
